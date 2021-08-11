@@ -93,6 +93,10 @@
               <reference value="Procedure/kv-Keesmaat-zwanger1" />
               <display value="vaginale kunstverlossingKeesmaat" />
           </entry>
+          <entry>
+            <reference value="Observation/bloedverlies1" />
+            <display value="Hoeveelheid bloedverlies" />
+          </entry>
         </section>
       </Composition>
     </resource>
@@ -738,6 +742,54 @@
     <request>
         <method value="PUT" />
         <url value="Observation/kind1-Keesmaat-apg5M" />
+  </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="bloedverlies1" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Procedure/geboorte1-Keesmaat" />
+            </valueReference>
+        </extension>
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
+            </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="364332008" />
+                <display value="Blood loss in labour" />
+            </coding>
+        </code>
+        <subject>
+            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+        </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <effectiveDateTime value="2016-06-22" />
+        <valueQuantity>
+          <value value="10"/>
+        </valueQuantity>
+        <comment value="Toelichting op de Partus" />
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="225308005" />
+                <display value="observatie (regime/therapie)" />
+            </coding>
+        </method>
+    </Observation>
+    </resource>
+    <request>
+        <method value="PUT" />
+        <url value="Observation/bloedverlies1" />
   </request>
   </entry>
 </Bundle>
