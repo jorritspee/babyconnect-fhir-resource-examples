@@ -776,6 +776,9 @@
         <effectiveDateTime value="2016-06-22" />
         <valueQuantity>
           <value value="10"/>
+          <unit value="ml" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="ml"/>
         </valueQuantity>
         <comment value="Toelichting op de Partus" />
         <method>
