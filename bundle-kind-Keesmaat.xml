@@ -142,7 +142,11 @@
             </valueCodeableConcept>
           </extension>
         </gender>
-        <birthDate value="2016-06-22" />
+        <birthDate value="2016-06-22">
+          <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+            <valueDateTime value="2016-06-22T02:00:00+01:00" />
+          </extension>
+        </birthDate>
         <multipleBirthInteger value="2" />
       </Patient>
     </resource>
