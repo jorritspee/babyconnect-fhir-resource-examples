@@ -1,0 +1,743 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Zwangerschap-Keesmaat" />
+  <type value="transaction" />
+  <entry>
+    <fullUrl value="urn:uuid:c755a07e-1904-11eb-6105-020000000000-Vorig" />
+    <resource>
+      <Composition>
+        <id value="Zwangerschap-Keesmaat-vorig" />
+        <status value="final" />
+        <type>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="15508-5" />
+            <display value="Labor and delivery records" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+          <display value="Keesmaat" />
+        </subject>
+        <date value="2018-10-28T11:03:07.977+01:00" />
+        <author>
+          <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
+          <display value="Zorgverlener" />
+        </author>
+        <title value="Prio1 vorige zwangerschap" />
+        <section>
+          <entry>
+            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+          </entry>
+          <entry>
+            <reference value="Organization/o1504" />
+            <display value="Verloskundigenpraktijk A" />
+          </entry>
+          <entry>
+            <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
+            <display value="Zorgverlener" />
+          </entry>
+          <entry>
+            <reference value="PractitionerRole/pr1504" />
+            <display value="Verloskundigenpraktijk A" />
+          </entry>
+          <entry>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+            <display value="Zwangerschap vorig Keesmaat" />
+          </entry>
+          <entry>
+            <reference value="Condition/c755a91f-1904-11eb-6105-020000000000-vorig" />
+            <display value="Zwangerschap vorig Keesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/c755a920-1904-11eb-6105-020000000000" />
+            <display value="graviditeitKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/c755a921-1904-11eb-6105-020000000000" />
+            <display value="pariteitKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/c755a923-1904-11eb-6105-020000000000-BA" />
+            <display value="wijze einde zwangerschapKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/c755a923-1904-11eb-6105-020000000000-BAB" />
+            <display value="Datum einde zwangerschapKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Procedure/c755a923-1904-11eb-6105-020000000000-BABC" />
+            <display value="BevallingKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/c755a923-1904-11eb-6105-020000000000-BABCD" />
+            <display value="Tijdstip begin actieve ontsluitingKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/c755a923-1904-11eb-6105-020000000000-BABCDE" />
+            <display value="Conditie perineum postpartumKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Procedure/geboorte1-Keesmaat" />
+            <display value="baringKeesmaat" />
+          </entry>
+          <entry>
+            <reference value="Observation/begin-actief-meepersen-Keesmaat-zwanger1"/>
+            <display value="Tijdstip actief meepersenKeesmaat"/>
+          </entry>
+          <entry>
+            <reference value="Observation/typepartus-Keesmaat-zwanger1" />
+            <display value="type partusKeesmaat" />
+          </entry>
+          <entry>
+              <reference value="Procedure/kv-Keesmaat-zwanger1" />
+              <display value="vaginale kunstverlossingKeesmaat" />
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Composition/Zwangerschap-Keesmaat-vorig" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+    <resource>
+      <Patient>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div>Id 999996472 (BSN), Keesmaat</div>
+          </div>
+        </text>
+        <identifier>
+          <system value="http://fhir.nl/fhir/NamingSystem/bsn" />
+          <value value="999996472" />
+        </identifier>
+        <name>
+          <family value="Keesmaat">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Keesmaat" />
+            </extension>
+          </family>
+        </name>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Patient?identifier=999996472" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c755980f-1904-11eb-6105-020000000000" />
+    <resource>
+      <Organization>
+        <id value="o1504" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+              <caption>OrganisatieId: 1504</caption>
+              <tbody>
+                <tr>
+                  <th>Naam</th>
+                  <td>Verloskundigenpraktijk A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
+        <identifier>
+          <value value="o1504" />
+        </identifier>
+        <name value="Verloskundigenpraktijk A" />
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Organization/o1504" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c75595df-1904-11eb-6105-020000000000" />
+    <resource>
+      <Practitioner>
+        <id value="c75595df-1904-11eb-6105-020000000000" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div />
+          </div>
+        </text>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c75595de-1904-11eb-6105-020000000000" />
+    <resource>
+      <PractitionerRole>
+        <id value="pr1504" />
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+              <caption>Zorgverlenerrol</caption>
+              <tbody>
+                <tr>
+                  <th>Zorgverlener</th>
+                  <td>
+                    <div>
+                      <a href="Practitioner/c75595df-1904-11eb-6105-020000000000">Practitioner/c75595df-1904-11eb-6105-020000000000</a>
+                    </div>
+                    <div>
+                      <a href="Organization/o1504">Verloskundigenpraktijk A</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
+        <practitioner>
+          <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
+        </practitioner>
+        <organization>
+          <reference value="Organization/o1504" />
+          <display value="Verloskundigenpraktijk A" />
+        </organization>
+      </PractitionerRole>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="PractitionerRole/pr1504" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c75595ba-1904-11eb-6105-020000000000-vorig" />
+    <resource>
+      <EpisodeOfCare>
+        <id value="c75595ba-1904-11eb-6105-020000000000-vorig" />
+        <status value="active" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="364320009" />
+            <display value="Pregnancy observable (observable entity)" />
+          </coding>
+        </type>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/c755a91f-1904-11eb-6105-020000000000-vorig" />
+            <display value="Zwangerschap vorig Keesmaat" />
+          </condition>
+        </diagnosis>
+        <patient>
+          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+          <display value="Keesmaat" />
+        </patient>
+        <managingOrganization>
+          <reference value="Organization/o1504" />
+          <display value="Verloskundigenpraktijk A" />
+        </managingOrganization>
+        <careManager>
+          <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
+        </careManager>
+      </EpisodeOfCare>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c755a91f-1904-11eb-6105-020000000000-vorig" />
+    <resource>
+      <Condition>
+        <id value="c755a91f-1904-11eb-6105-020000000000-vorig" />
+        <clinicalStatus value="inactive" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="364320009" />
+            <display value="Pregnancy observable (observable entity)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+          <display value="Keesmaat" />
+        </subject>
+        <context>
+          <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+          <display value="Zwangerschap vorig Keesmaat" />
+        </context>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Condition/c755a91f-1904-11eb-6105-020000000000-vorig" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c755a920-1904-11eb-6105-020000000000" />
+    <resource>
+      <Observation>
+        <id value="c755a920-1904-11eb-6105-020000000000" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+          <valueReference>
+            <reference value="Condition/c755a91f-1904-11eb-6105-020000000000-vorig" />
+            <display value="Zwangerschap vorig Keesmaat" />
+          </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="2.16.840.1.113883.2.4.4.13" />
+            <code value="Gravidity" />
+            <display value="Graviditeit" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+          <display value="Keesmaat" />
+        </subject>
+        <context>
+          <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+          <display value="Zwangerschap vorig Keesmaat" />
+        </context>
+        <valueQuantity>
+          <value value="4" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Observation/c755a920-1904-11eb-6105-020000000000" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c755a921-1904-11eb-6105-020000000000" />
+    <resource>
+      <Observation>
+        <id value="c755a921-1904-11eb-6105-020000000000" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
+          <valueReference>
+            <reference value="Condition/c755a91f-1904-11eb-6105-020000000000-vorig" />
+            <display value="Zwangerschap vorig Keesmaat" />
+          </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="2.16.840.1.113883.6.96" />
+            <code value="364325004" />
+            <display value="Parity (observable entity)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+          <display value="Keesmaat" />
+        </subject>
+        <context>
+          <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+          <display value="Zwangerschap vorig Keesmaat" />
+        </context>
+        <valueQuantity>
+          <value value="2" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Observation/c755a921-1904-11eb-6105-020000000000" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c755a923-1904-11eb-6105-020000000000-BA" />
+      <resource>
+        <Observation>
+          <id value="c755a923-1904-11eb-6105-020000000000-BA" />
+          <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+              <valueReference>
+                  <reference value="Condition/c75595ba-1904-11eb-6105-020000000000-vorig" />
+              </valueReference>
+          </extension>
+          <status value="final" />
+          <code>
+              <coding>
+                  <system value="urn:oid:2.16.840.1.113883.2.4.4.13" />
+                  <code value="EindeZw" />
+                  <display value="Wijze einde zwangerschap" />
+              </coding>
+          </code>
+          <subject>
+              <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+              <display value="Keesmaat" />
+            </subject>
+          <context>
+                <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+                <display value="Zwangerschap Keesmaat" />
+            </context>
+          <valueCodeableConcept>
+              <!--  wijze_einde_zwangerschap conceptId="2.16.840.1.113883.2.4.3.11.60.90.77.2.6.80625"  -->
+              <coding>
+                  <system value="urn:oid:2.16.840.1.113883.2.4.4.13.46" />
+                  <code value="1" />
+                  <display value="Partus" />
+              </coding>
+          </valueCodeableConcept>
+      </Observation>
+      </resource>
+      <request>
+        <method value="PUT" />
+        <url value="Observation/c755a923-1904-11eb-6105-020000000000-BA" />
+      </request>
+  </entry>  
+  <entry>
+      <resource>
+        <Observation>
+          <id value="c755a923-1904-11eb-6105-020000000000-BAB" />
+          <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+              <valueReference>
+                  <reference value="Condition/c75595ba-1904-11eb-6105-020000000000-vorig" />
+              </valueReference>
+          </extension>
+          <status value="final" />
+          <code>
+              <coding>
+                  <system value="http://snomed.info/sct" />
+                  <code value="118951000146109" />
+                  <display value="Date of end of pregnancy (observable entity)" />
+              </coding>
+          </code>
+          <subject>
+              <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+              <display value="Keesmaat" />
+            </subject>
+          <context>
+                <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+                <display value="Zwangerschap Keesmaat" />
+            </context>
+          <valueDateTime value="2016-06-22" />
+      </Observation>
+      </resource>
+      <request>
+        <method value="PUT" />
+        <url value="Observation/c755a923-1904-11eb-6105-020000000000-BAB" />
+      </request>
+  </entry>
+  <entry>
+    <resource>
+      <Procedure>
+        <id value="c755a923-1904-11eb-6105-020000000000-BABC" />
+        <status value="completed" />
+        <category>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="386637004" />
+                <display value="Obstetric procedure (procedure)" />
+            </coding>
+        </category>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="236973005" />
+                <display value="Delivery procedure (procedure)" />
+            </coding>
+        </code>
+        <subject>
+        <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+          </subject>
+        <context>
+              <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+              <display value="Zwangerschap Keesmaat" />
+          </context>
+        <performedPeriod>
+            <start value="2016-02-20" />
+        </performedPeriod>
+        <reasonReference>
+            <reference value="Condition/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </reasonReference>
+    </Procedure>
+    </resource>
+      <request>
+        <method value="PUT" />
+        <url value="Procedure/c755a923-1904-11eb-6105-020000000000-BABC" />
+      </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="c755a923-1904-11eb-6105-020000000000-BABCD" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Procedure/c755a923-1904-11eb-6105-020000000000-BABC" />
+            </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="249120008" />
+                <display value="Onset of labor first stage (observable entity)" />
+            </coding>
+        </code>
+        <subject>
+        <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+          </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <valueDateTime value="2016-02-21T21:46:00+01:00" />
+    </Observation>
+    </resource>
+      <request>
+        <method value="PUT" />
+        <url value="Observation/c755a923-1904-11eb-6105-020000000000-BABCD" />
+      </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="c755a923-1904-11eb-6105-020000000000-BABCDE" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Procedure/c755a923-1904-11eb-6105-020000000000-BABC" />
+            </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="364297003" />
+                <display value="Female perineum observable (observable entity)" />
+            </coding>
+        </code>
+        <subject>
+        <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+          </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="609344008" />
+                <display value="episiotomiewond" />
+            </coding>
+        </valueCodeableConcept>
+    </Observation>
+    </resource>
+    <request>
+        <method value="PUT" />
+        <url value="Observation/c755a923-1904-11eb-6105-020000000000-BABCDE" />
+  </request>
+  </entry>
+
+  
+  <entry>
+    <resource>
+    <Procedure xmlns="http://hl7.org/fhir">
+        <id value="geboorte1-Keesmaat" />
+        <partOf>
+            <reference value="Procedure/c755a923-1904-11eb-6105-020000000000-BABC" />
+        </partOf>
+        <status value="completed" />
+        <category>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="386637004" />
+                <display value="Obstetric procedure (procedure)" />
+            </coding>
+        </category>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="3950001" />
+                <display value="Birth (finding)" />
+            </coding>
+        </code>
+        <subject>
+            <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
+            <display value="Kind van Keesmaat" />
+        </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <performedPeriod>
+            <start value="2016-06-22" />
+        </performedPeriod>
+        <reasonReference>
+            <reference value="Condition/c755a91f-1904-11eb-6105-020000000000-vorig" />
+        </reasonReference>
+    </Procedure>
+    </resource>
+    <request>
+      <method value="PUT" />
+    <url value="Procedure/geboorte1-Keesmaat" />
+  </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="begin-actief-meepersen-Keesmaat-zwanger1" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Procedure/c755a923-1904-11eb-6105-020000000000-BABC" />
+            </valueReference>
+        </extension>
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
+            </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="249163006" />
+                <display value="Onset of pushing (in labor) (observable entity)" />
+            </coding>
+        </code>
+        <subject>
+            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+        </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <valueDateTime value="2016-02-22T01:01:00+01:00" />
+    </Observation>
+    </resource>
+    <request>
+        <method value="PUT" />
+        <url value="Observation/begin-actief-meepersen-Keesmaat-zwanger1" />
+  </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="typepartus-Keesmaat-zwanger1" />
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Procedure/geboorte1-Keesmaat" />
+            </valueReference>
+        </extension>
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/Observation-focusSTU3">
+            <valueReference>
+                <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
+            </valueReference>
+        </extension>
+        <status value="final" />
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="364336006" />
+                <display value="Pattern of delivery (observable entity)" />
+            </coding>
+        </code>
+        <subject>
+            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+        </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <effectiveDateTime value="2016-06-22" />
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="3311000146109" />
+                <display value="Assisted delivery of fetus (procedure)" />
+            </coding>
+        </valueCodeableConcept>
+        <comment value="Toelichting op de Partus" />
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="225308005" />
+                <display value="observatie (regime/therapie)" />
+            </coding>
+        </method>
+    </Observation>
+    </resource>
+    <request>
+        <method value="PUT" />
+        <url value="Observation/typepartus-Keesmaat-zwanger1" />
+  </request>
+  </entry>
+  <entry>
+    <resource>
+      <Procedure xmlns="http://hl7.org/fhir">
+        <id value="kv-Keesmaat-zwanger1" />
+        <partOf>
+            <reference value="Procedure/geboorte1-Keesmaat" />
+        </partOf>
+        <status value="completed" />
+        <category>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="386637004" />
+                <display value="Obstetric procedure (procedure)" />
+            </coding>
+        </category>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="61586001" />
+                <display value="Delivery by vacuum extraction (procedure)" />
+            </coding>
+        </code>
+        <subject>
+            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
+            <display value="Keesmaat" />
+        </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+    </Procedure>
+    </resource>
+    <request>
+        <method value="PUT" />
+        <url value="Procedure/kv-Keesmaat-zwanger1" />
+  </request>
+  </entry>
+
+  <entry>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="kind1-Keesmaat-apg5M" />
+        <status value="final" />
+        <code>
+            <coding>
+                <system value="http://loinc.org" />
+                <code value="9274-2" />
+                <display value="5 minute Apgar Score" />
+            </coding>
+        </code>
+        <subject>
+            <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
+            <display value="Kind Keesmaat" />
+        </subject>
+        <context>
+            <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
+        </context>
+        <effectiveDateTime value="2016-02-22" />
+        <valueQuantity>
+            <value value="10" />
+        </valueQuantity>
+    </Observation>
+    </resource>
+    <request>
+        <method value="PUT" />
+        <url value="Observation/kind1-Keesmaat-apg5M" />
+  </request>
+  </entry>
+</Bundle>
