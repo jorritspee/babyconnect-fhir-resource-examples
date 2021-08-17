@@ -1,49 +1,53 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="kind1-Keesmaat" />
-  <type value="transaction" />
+  <id value="kind1-Keesmaat"/>
+  <type value="transaction"/>
   <entry>
-    <fullUrl value="urn:uuid:c755a07e-1904-11eb-6105-020000000000-Kind1Keesmaat" />
+    <fullUrl value="urn:uuid:c755a07e-1904-11eb-6105-020000000000-Kind1Keesmaat"/>
     <resource>
       <Composition>
-        <id value="Keesmaat-kind1" />
-        <status value="final" />
+        <id value="Keesmaat-kind1"/>
+        <status value="final"/>
         <type>
           <coding>
-            <system value="http://loinc.org" />
-            <code value="15508-5" />
-            <display value="Labor and delivery records" />
+            <system value="http://loinc.org"/>
+            <code value="15508-5"/>
+            <display value="Labor and delivery records"/>
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000-CHILD" />
-          <display value="Kind1 Keesmaat" />
+          <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000-CHILD"/>
+          <display value="Kind1 Keesmaat"/>
         </subject>
-        <date value="2018-10-28T11:03:07.977+01:00" />
+        <date value="2018-10-28T11:03:07.977+01:00"/>
         <author>
-          <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
-          <display value="Zorgverlener" />
+          <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000"/>
+          <display value="Zorgverlener"/>
         </author>
-        <title value="Prio1 vorige zwangerschap kind1 Keesmaat" />
+        <title value="Prio1 vorige zwangerschap kind1 Keesmaat"/>
         <section>
           <entry>
-            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000-CHILD" />
-            <display value="Kind1 Keesmaat" />
+            <reference value="urn:uuid:c75595d4-1904-11eb-6105-020000000000-CHILD"/>
+            <display value="Kind1 Keesmaat"/>
           </entry>
           <entry>
-            <reference value="Organization/o1504" />
-            <display value="Verloskundigenpraktijk A" />
+            <reference value="Organization/o1504"/>
+            <display value="Verloskundigenpraktijk A"/>
           </entry>
           <entry>
-            <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
-            <display value="Zorgverlener" />
+            <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000"/>
+            <display value="Zorgverlener"/>
           </entry>
           <entry>
-            <reference value="PractitionerRole/pr1504" />
-            <display value="Verloskundigenpraktijk A" />
+            <reference value="PractitionerRole/pr1504"/>
+            <display value="Verloskundigenpraktijk A"/>
           </entry>
           <entry>
-            <reference value="Observation/kind1-Keesmaat-apg5M" />
-            <display value="Apgarscore kind1Keesmaat" />
+            <reference value="Observation/kind1-Keesmaat-apg5M"/>
+            <display value="Apgarscore kind1Keesmaat"/>
+          </entry>
+          <entry>
+            <reference value="Observation/kind1-Keesmaat-birthweight"/>
+            <display value="Geboortegewicht kind1Keesmaat"/>
           </entry>
         </section>
       </Composition>
@@ -54,7 +58,7 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:c75595d4-1904-11eb-6105-020000000000-CHILD" />
+    <fullUrl value="urn:uuid:c75595d4-1904-11eb-6105-020000000000-CHILD"/>
     <resource>
       <Patient>
         <id value="c75595d4-1904-11eb-6105-020000000000-CHILD"/>
@@ -62,63 +66,63 @@
           <valueAddress>
             <line value="Dorpstraat 80A">
               <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-                <valueString value="Dorpstraat" />
+                <valueString value="Dorpstraat"/>
               </extension>
               <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-                <valueString value="80" />
+                <valueString value="80"/>
               </extension>
               <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
-                <valueString value="A" />
+                <valueString value="A"/>
               </extension>
             </line>
-              <city value="Spanbroek" />
-              <district value="Opmeer" />
-              <postalCode value="1234XY" />
-              <country value="NLD">
-                <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
-                  <valueCodeableConcept>
-                    <coding>
-                      <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34" />
-                      <code value="6030" />
-                      <display value="Nederland" />
-                    </coding>
-                  </valueCodeableConcept>
-                </extension>
-              </country>
+            <city value="Spanbroek"/>
+            <district value="Opmeer"/>
+            <postalCode value="1234XY"/>
+            <country value="NLD">
+              <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34"/>
+                    <code value="6030"/>
+                    <display value="Nederland"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+            </country>
           </valueAddress>
         </extension>
         <identifier>
-          <use value="official" />
-          <system value="http://fhir.nl/fhir/NamingSystem/bsn" />
-          <value value="12345678" />
+          <use value="official"/>
+          <system value="http://fhir.nl/fhir/NamingSystem/bsn"/>
+          <value value="12345678"/>
         </identifier>
         <identifier>
-          <use value="official" />
-          <system value="LocalIdentifierSystem" />
-          <value value="123456" />
+          <use value="official"/>
+          <system value="LocalIdentifierSystem"/>
+          <value value="123456"/>
         </identifier>
         <identifier>
-          <use value="official" />
-          <system value="PRN" />
-          <value value="0011223344201708012" />
+          <use value="official"/>
+          <system value="PRN"/>
+          <value value="0011223344201708012"/>
         </identifier>
-        <active value="true" />
+        <active value="true"/>
         <name>
           <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
-            <valueCode value="NL4" />
+            <valueCode value="NL4"/>
           </extension>
-          <use value="official" />
+          <use value="official"/>
           <family value="Keesmaat">
             <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-              <valueString value="Kind" />
+              <valueString value="Kind"/>
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
-              <valueString value="van" />
+              <valueString value="van"/>
             </extension>
           </family>
           <given value="Child">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
-              <valueCode value="BR" />
+              <valueCode value="BR"/>
             </extension>
           </given>
         </name>
@@ -126,158 +130,193 @@
           <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
             <valueCodeableConcept>
               <coding>
-                <system value="http://hl7.org/fhir/v3/AdministrativeGender" />
-                <code value="M" />
-                <display value="Male" />
+                <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+                <code value="M"/>
+                <display value="Male"/>
               </coding>
             </valueCodeableConcept>
           </extension>
           <extension url="http://nictiz.nl/fhir/StructureDefinition/bc-patient-birthsex">
             <valueCodeableConcept>
               <coding>
-                <system value="Medisch" />
-                <code value="1" />
-                <display value="mannelijk" />
+                <system value="Medisch"/>
+                <code value="1"/>
+                <display value="mannelijk"/>
               </coding>
             </valueCodeableConcept>
           </extension>
         </gender>
         <birthDate value="2016-06-22">
           <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-            <valueDateTime value="2016-06-22T02:00:00+01:00" />
+            <valueDateTime value="2016-06-22T02:00:00+01:00"/>
           </extension>
         </birthDate>
-        <multipleBirthInteger value="2" />
+        <multipleBirthInteger value="2"/>
       </Patient>
     </resource>
-      <request>
-        <method value="PUT" />
-        <url value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
-      </request>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD"/>
+    </request>
   </entry>
   <entry>
-  <fullUrl value="urn:uuid:c755980f-1904-11eb-6105-020000000000" />
-  <resource>
-    <Organization>
-      <id value="o1504" />
-      <text>
-        <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <table>
-            <caption>OrganisatieId: 1504</caption>
-            <tbody>
-              <tr>
-                <th>Naam</th>
-                <td>Verloskundigenpraktijk A</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </text>
-      <identifier>
-        <value value="o1504" />
-      </identifier>
-      <name value="Verloskundigenpraktijk A" />
-    </Organization>
-  </resource>
-  <request>
-    <method value="PUT" />
-    <url value="Organization/o1504" />
-  </request>
-</entry>
-<entry>
-  <fullUrl value="urn:uuid:c75595df-1904-11eb-6105-020000000000" />
-  <resource>
-    <Practitioner>
-      <id value="c75595df-1904-11eb-6105-020000000000" />
-      <text>
-        <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <div />
-        </div>
-      </text>
-    </Practitioner>
-  </resource>
-  <request>
-    <method value="PUT" />
-    <url value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
-  </request>
-</entry>
-<entry>
-  <fullUrl value="urn:uuid:c75595de-1904-11eb-6105-020000000000" />
-  <resource>
-    <PractitionerRole>
-      <id value="pr1504" />
-      <text>
-        <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <table>
-            <caption>Zorgverlenerrol</caption>
-            <tbody>
-              <tr>
-                <th>Zorgverlener</th>
-                <td>
-                  <div>
-                    <a href="Practitioner/c75595df-1904-11eb-6105-020000000000">Practitioner/c75595df-1904-11eb-6105-020000000000</a>
-                  </div>
-                  <div>
-                    <a href="Organization/o1504">Verloskundigenpraktijk A</a>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </text>
-      <practitioner>
-        <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
-      </practitioner>
-      <organization>
-        <reference value="Organization/o1504" />
-        <display value="Verloskundigenpraktijk A" />
-      </organization>
-    </PractitionerRole>
-  </resource>
-  <request>
-    <method value="PUT" />
-    <url value="PractitionerRole/pr1504" />
-  </request>
-</entry>
-<entry>
-  <resource>
-    <Observation xmlns="http://hl7.org/fhir">
-      <id value="kind1-Keesmaat-apg5M" />
-      <status value="final" />
-      <code>
+    <fullUrl value="urn:uuid:c755980f-1904-11eb-6105-020000000000"/>
+    <resource>
+      <Organization>
+        <id value="o1504"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+              <caption>OrganisatieId: 1504</caption>
+              <tbody>
+                <tr>
+                  <th>Naam</th>
+                  <td>Verloskundigenpraktijk A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
+        <identifier>
+          <value value="o1504"/>
+        </identifier>
+        <name value="Verloskundigenpraktijk A"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/o1504"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c75595df-1904-11eb-6105-020000000000"/>
+    <resource>
+      <Practitioner>
+        <id value="c75595df-1904-11eb-6105-020000000000"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div/>
+          </div>
+        </text>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Practitioner/c75595df-1904-11eb-6105-020000000000"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c75595de-1904-11eb-6105-020000000000"/>
+    <resource>
+      <PractitionerRole>
+        <id value="pr1504"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+              <caption>Zorgverlenerrol</caption>
+              <tbody>
+                <tr>
+                  <th>Zorgverlener</th>
+                  <td>
+                    <div>
+                      <a href="Practitioner/c75595df-1904-11eb-6105-020000000000">Practitioner/c75595df-1904-11eb-6105-020000000000</a>
+                    </div>
+                    <div>
+                      <a href="Organization/o1504">Verloskundigenpraktijk A</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
+        <practitioner>
+          <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/o1504"/>
+          <display value="Verloskundigenpraktijk A"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="PractitionerRole/pr1504"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="kind1-Keesmaat-apg5M"/>
+        <status value="final"/>
+        <code>
           <coding>
-              <system value="http://loinc.org" />
-              <code value="9274-2" />
-              <display value="5 minute Apgar Score" />
+            <system value="http://loinc.org"/>
+            <code value="9274-2"/>
+            <display value="5 minute Apgar Score"/>
           </coding>
-      </code>
-      <subject>
-          <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD" />
-          <display value="Kind Keesmaat" />
-      </subject>
-      <context>
-          <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
-      </context>
-      <effectiveDateTime value="2016-02-22" />
-      <valueQuantity>
-          <value value="10" />
-      </valueQuantity>
-  </Observation>
-  </resource>
-  <request>
-      <method value="PUT" />
-      <url value="Observation/kind1-Keesmaat-apg5M" />
-</request>
-</entry>
+        </code>
+        <subject>
+          <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD"/>
+          <display value="Kind Keesmaat"/>
+        </subject>
+        <context>
+          <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig"/>
+        </context>
+        <effectiveDateTime value="2016-02-22"/>
+        <valueQuantity>
+          <value value="10"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/kind1-Keesmaat-apg5M"/>
+    </request>
+  </entry>
+  <entry>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="kind1-Keesmaat-birthweight"/>
+        <meta>
+          <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-observation"/>
+          <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-ChildObservation"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8339-4"/>
+            <display value="Birth weight Measured"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/c75595d4-1904-11eb-6105-020000000000-CHILD"/>
+          <display value="Kind Keesmaat"/>
+        </subject>
+        <context>
+          <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig"/>
+        </context>
+        <valueQuantity>
+          <value value="2845"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="gram"/>
+        </valueQuantity>
+        <interpretation>
+          <coding>
+            <system value="PercentielGeboortegewicht"/>
+            <code value="2"/>
+            <display value="p2,3 tot p10"/>
+          </coding>
+        </interpretation>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/kind1-Keesmaat-birthweight"/>
+    </request>
+  </entry>
 </Bundle>
-
-
-
-
-
-
-          
