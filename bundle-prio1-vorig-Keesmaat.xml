@@ -462,7 +462,7 @@
               <display value="Zwangerschap Keesmaat" />
           </context>
         <performedPeriod>
-            <start value="2016-02-20" />
+            <start value="2016-06-20" />
         </performedPeriod>
         <reasonReference>
             <reference value="Condition/c75595ba-1904-11eb-6105-020000000000-vorig" />
@@ -498,7 +498,7 @@
         <context>
             <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
         </context>
-        <valueDateTime value="2016-02-21T21:46:00+01:00" />
+        <valueDateTime value="2016-06-21T21:46:00+01:00" />
     </Observation>
     </resource>
       <request>
@@ -617,7 +617,7 @@
         <context>
             <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
         </context>
-        <valueDateTime value="2016-02-22T01:01:00+01:00" />
+        <valueDateTime value="2016-06-22T01:01:00+01:00" />
     </Observation>
     </resource>
     <request>
@@ -733,7 +733,7 @@
         <context>
             <reference value="EpisodeOfCare/c75595ba-1904-11eb-6105-020000000000-vorig" />
         </context>
-        <effectiveDateTime value="2016-02-22" />
+        <effectiveDateTime value="2016-06-22" />
         <valueQuantity>
             <value value="10" />
         </valueQuantity>
