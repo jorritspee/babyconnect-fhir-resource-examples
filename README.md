@@ -1,3 +1,3 @@
 # babyconnect-fhir-resource-examples
 
-Example bundle files for the Babyconnect program.
+Voorbeeld bundles voor het VIPP-programma Babyconnect.
