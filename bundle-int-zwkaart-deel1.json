@@ -1,12 +1,12 @@
 {
   "resourceType": "Bundle",
-  "id": "0b231197-1188-4717-b30e-b642e480c2a1",
+  "id": "bundle-izk-1",
   "type": "transaction",
   "entry": [
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "114359c8-efda-4e64-bca0-be627408e789",
+        "id": "composition-izk-1",
         "meta": {
           "profile": [
             "http://nictiz.nl/fhir/StructureDefinition/bc-TransactionComposition"
@@ -27,7 +27,7 @@
         },
         "date": "2021-02-16T15:04:16.5777651T01:00",
         "author": {
-            "reference": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c",
+            "reference": "Practitioner/mw-verloskundige",
             "display": "MW Verloskundige"
           },
         "title": "Prio1 huidige zwangerschap",
@@ -39,15 +39,15 @@
                 "display": "Anneke Leegwater"
               },
               {
-                "reference": "Organization/0818dfa0-dc9a-4321-b56b-1d1ba089af13",
+                "reference": "Organization/praktijk-de-boom",
                 "display": "Verloskundigenpraktijk De Boom"
               },
               {
-                "reference": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c",
+                "reference": "Practitioner/mw-verloskundige",
                 "display": "MW Verloskundige"
               },
               {
-                "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789",
+                "reference": "EpisodeOfCare/dossier-izk-1",
                 "display": "Zwangerschap Anneke Leegwater"
               },
               {
@@ -142,7 +142,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Composition/114359c8-efda-4e64-bca0-be627408e789"
+        "url": "Composition/composition-izk-1"
       }
     },
     {
@@ -291,10 +291,10 @@
       }
     },
     {
-      "fullUrl": "Organization/0818dfa0-dc9a-4321-b56b-1d1ba089af13",
+      "fullUrl": "Organization/praktijk-de-boom",
       "resource": {
         "resourceType": "Organization",
-        "id": "0818dfa0-dc9a-4321-b56b-1d1ba089af13",
+        "id": "praktijk-de-boom",
         "meta": {
           "profile": [
             "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
@@ -421,11 +421,11 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Organization/0818dfa0-dc9a-4321-b56b-1d1ba089af13"
+        "url": "Organization/praktijk-de-boom"
       }
     },
     {
-      "fullUrl": "urn:uuid:918f8b53-7108-41f7-b48f-4858c0eae95c",
+      "fullUrl": "Practitioner/mw-verloskundige",
       "resource": {
         "resourceType": "Practitioner",
         "meta": {
@@ -446,14 +446,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c"
+        "url": "Practitioner/mw-verloskundige"
       }
     },
     {
-      "fullUrl": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789",
+      "fullUrl": "EpisodeOfCare/dossier-izk-1",
       "resource": {
         "resourceType": "EpisodeOfCare",
-        "id": "114359c8-efda-4e64-bca0-be627408e789",
+        "id": "dossier-izk-1",
         "meta": {
           "profile": [
             "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare",
@@ -496,7 +496,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+        "url": "EpisodeOfCare/dossier-izk-1"
       }
     },
     {
@@ -543,7 +543,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         }
       },
       "request": {
@@ -607,7 +607,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "effectiveDateTime": "2018-07-10",
         "valueCodeableConcept": {
@@ -682,7 +682,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "effectiveDateTime": "2020-09-10",
         "valueCodeableConcept": {
@@ -757,7 +757,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "effectiveDateTime": "2020-11-05",
         "valueCodeableConcept": {
@@ -777,9 +777,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:036d191e-fc71-467d-a24c-6f4e3c82404b",
+      "fullUrl": "Observation/observatie-hb-1",
       "resource": {
         "resourceType": "Observation",
+        "id": "observatie-hb-1",
         "meta": {
           "profile": [
             "http://fhir.nl/fhir/StructureDefinition/nl-core-observation",
@@ -832,7 +833,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "effectiveDateTime": "2020-02-06",
         "valueQuantity": {
@@ -843,7 +844,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/036d191e-fc71-467d-a24c-6f4e3c82404b"
+        "url": "Observation/observatie-hb-1"
       }
     },
     {
@@ -882,7 +883,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "valueQuantity": {
           "value": 2,
@@ -931,7 +932,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "valueQuantity": {
           "value": 1,
@@ -980,7 +981,7 @@
           "reference": "Patient/Leegwater"
         },
         "context": {
-          "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+          "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "valueDateTime": "2017-08-13",
         "method": {
@@ -1032,13 +1033,13 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789",
+            "reference": "EpisodeOfCare/dossier-izk-1",
             "display": "Zwangerschap Anneke Leegwater"
         },
         "effectiveDateTime": "2020-09-17",
         "performer":  [
             {
-                "reference": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c",
+                "reference": "Practitioner/mw-verloskundige",
                 "display": "MW Verloskundige"
             }
         ],
@@ -1094,12 +1095,12 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+            "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "effectiveDateTime": "2020-04-15",
         "performer":  [
             {
-                "reference": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c",
+                "reference": "Practitioner/mw-verloskundige",
                 "display": "MW Verloskundige"
             }
         ],
@@ -1128,6 +1129,12 @@
       "fullUrl": "urn:uuid:8c7b4ab1-4751-4e84-a136-83f0dbc41b64856643",
       "resource": {
         "resourceType": "Encounter",
+        "id": "",
+        "meta": {
+            "profile":  [
+                "http://nictiz.nl/fhir/StructureDefinition/bc-Encounter"
+            ]
+        },
         "status": "finished",
         "class": {
             "extension":  [
@@ -1162,7 +1169,7 @@
         },
         "episodeOfCare":  [
             {
-                "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+                "reference": "EpisodeOfCare/dossier-izk-1"
             }
         ],
         "period": {
@@ -1221,7 +1228,7 @@
         "effectiveDateTime": "2020-02-27",
         "performer":  [
             {
-                "reference": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c"
+                "reference": "Practitioner/mw-verloskundige"
             }
         ],
         "valueQuantity": {
@@ -1600,7 +1607,7 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+            "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "effectiveDateTime": "2020-04-15",
         "valueQuantity": {
@@ -1700,7 +1707,7 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+            "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "note":  [
             {
@@ -1746,7 +1753,7 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789",
+            "reference": "EpisodeOfCare/dossier-izk-1",
             "display": "Zwangerschapsdossier"
         },
         "performedPeriod": {
@@ -1792,7 +1799,7 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789"
+            "reference": "EpisodeOfCare/dossier-izk-1"
         },
         "performedPeriod": {
             "start": "2016-02-20"
@@ -1842,13 +1849,13 @@
             "display": "Anneke Leegwater"
         },
         "context": {
-            "reference": "EpisodeOfCare/114359c8-efda-4e64-bca0-be627408e789",
+            "reference": "EpisodeOfCare/dossier-izk-1",
             "display": "zwangerschap Leegwater"
         },
         "effectiveDateTime": "2021-05-06",
         "performer":  [
             {
-                "reference": "Practitioner/918f8b53-7108-41f7-b48f-4858c0eae95c",
+                "reference": "Practitioner/mw-verloskundige",
                 "display": "MW Verloskundige"
             }
         ],
