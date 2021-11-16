@@ -1,0 +1,549 @@
+{
+  "resourceType": "Bundle",
+  "id": "0b231197-1188-4717-b30e-b642e480c2a1",
+  "type": "transaction",
+  "entry": [
+    {
+    	"resource": {
+        "resourceType": "Composition",
+        "id": "Composition-Leegwater",
+        "meta": {
+          "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/bc-TransactionComposition"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "15508-5",
+              "display": "Labor and delivery records"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Leegwater"
+        },
+        "date": "2021-02-16T15:04:16.5777651T01:00",
+        "author": {
+            "reference": "Practitioner/AnnekeLeegwater-Practicioner",
+            "display": "MW Verloskundige"
+          },
+        "title": "Zwangerschap Anneke Leegwater",
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "Patient/Leegwater",
+                "display": "Anneke Leegwater"
+              },
+              {
+                "reference": "Organization/AnnekeLeegwater-Organization",
+                "display": "Verloskundigenpraktijk geboortezorg"
+              },
+              {
+                "reference": "Practitioner/AnnekeLeegwater-Practicioner",
+                "display": "MW Verloskundige"
+              },
+              {
+                "reference": "EpisodeOfCare/AnnekeLeegwater-EpisodeOfCare",
+                "display": "Zwangerschap Anneke Leegwater"
+              },
+              {
+                "reference": "Condition/AnnekeLeegwater-Condition-Zwangerschap",
+                "display": "Zwangerschap Anneke Leegwater"
+              },
+              {
+                "reference": "Observation/AnnekeLeegwater-Observation-HB",
+                "display": "Hb Anneke Leegwater"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/Composition-Leegwater"
+      }
+    },
+    {
+      "fullUrl": "Patient/Leegwater",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Leegwater",
+        "meta": {
+          "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-patient",
+            "http://nictiz.nl/fhir/StructureDefinition/bc-Woman"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Anneke Leegwater"
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+            "value": "182522878"
+          }
+        ],
+        "name": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                "valueCode": "NL4"
+              }
+            ],
+            "family": "Leegwater"
+          }
+        ],
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                      "code": "LL",
+                      "display": "Vast telefoonnummer"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "phone",
+            "value": "0382-56997",
+            "use": "home"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/v3/AddressUse",
+                      "code": "MC",
+                      "display": "Mobiel telefoonnummer"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "phone",
+            "value": "0614548585",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "Anneke@Leegwater.nl",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1988-10-03",
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+                "valueBoolean": true
+              },
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/v3/AddressUse",
+                      "code": "HP",
+                      "display": "Officieel adres"
+                    }
+                  ]
+                }
+              }
+            ],
+            "use": "home",
+            "line": [
+              "Onder het water 1"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Onder het water"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "1"
+                  }
+                ]
+              }
+            ],
+            "city": "Amsterdam",
+            "postalCode": "1000AB",
+            "country": "Nederland",
+            "_country": {
+              "extension": [
+                {
+                  "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:iso:std:iso:3166",
+                        "code": "NL",
+                        "display": "Nederland"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/Leegwater"
+      }
+    },
+    {
+      "fullUrl": "Organization/AnnekeLeegwater-Organization",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "AnnekeLeegwater-Organization",
+        "meta": {
+          "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Verloskundigenpraktijk geboortezorg"
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.nl/fhir/NamingSystem/agb-z/",
+            "value": "12345678"
+          },
+          {
+            "system": "http://fhir.nl/fhir/NamingSystem/ura",
+            "value": "12341234"
+          }
+        ],
+        "name": "Verloskundigenpraktijk geboortezorg",
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                      "code": "LL",
+                      "display": "Vast telefoonnummer"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "phone",
+            "value": "(0000) - 000000",
+            "use": "work"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/v3/AddressUse",
+                      "code": "MC",
+                      "display": "Mobiel telefoonnummer"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "phone",
+            "value": "0614548585",
+            "use": "mobile"
+          }
+        ],
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+                "valueBoolean": true
+              },
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/v3/AddressUse",
+                      "code": "WP",
+                      "display": "Werkadres"
+                    }
+                  ]
+                }
+              }
+            ],
+            "use": "work",
+            "line": [
+              "Boven het water 54A"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Boven het Water"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "54"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                    "valueString": "A"
+                  }
+                ]
+              }
+            ],
+            "city": "Amsterdam",
+            "postalCode": "1000CD",
+            "country": "Nederland",
+            "_country": {
+              "extension": [
+                {
+                  "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:iso:std:iso:3166",
+                        "code": "NL",
+                        "display": "Nederland"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/AnnekeLeegwater-Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:AnnekeLeegwater-Practicioner",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "AnnekeLeegwater-Practicioner",
+        "meta": {
+          "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "MW Verloskundige"
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers",
+            "value": "123456789"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/AnnekeLeegwater-Practicioner"
+      }
+    },
+    {
+      "fullUrl": "EpisodeOfCare/AnnekeLeegwater-EpisodeOfCare",
+      "resource": {
+        "resourceType": "EpisodeOfCare",
+        "id": "AnnekeLeegwater-EpisodeOfCare",
+        "meta": {
+          "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare",
+            "http://nictiz.nl/fhir/StructureDefinition/bc-MaternalRecord"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Zwangerschap Anneke Leegwater"
+        },
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "364320009",
+                "display": "Pregnancy observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/AnnekeLeegwater-Condition-Zwangerschap"
+            }
+          }
+        ],
+        "patient": {
+          "reference": "Patient/Leegwater"
+        },
+        "managingOrganization": {
+          "reference": "Organization/AnnekeLeegwater-Organization"
+        },
+        "period": {
+          "start": "2015-11-10",
+          "end": "15-08-2016"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "EpisodeOfCare/AnnekeLeegwater-EpisodeOfCare"
+      }
+    },
+    {
+      "fullUrl": "Condition/AnnekeLeegwater-Condition-Zwangerschap",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "AnnekeLeegwater-Condition-Zwangerschap",
+        "meta": {
+          "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Zwangerschap Anneke Leegwater"
+        },
+        "clinicalStatus": "inactive",
+        "_clinicalStatus": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "73425007",
+                    "display": "Niet actueel"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364320009",
+              "display": "Pregnancy observable"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Leegwater"
+        },
+        "context": {
+          "reference": "EpisodeOfCare/AnnekeLeegwater-EpisodeOfCare"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/AnnekeLeegwater-Condition-Zwangerschap"
+      }
+    },
+    {
+      "fullUrl": "Observation/AnnekeLeegwater-Observation-HB",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "AnnekeLeegwater-Observation-HB",
+        "meta": {
+          "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-observation",
+            "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Hb Anneke Leegwater"
+        },
+        "status": "final",
+        "_status": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+                    "code": "final",
+                    "display": "Definitief"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "49581000146104",
+                "display": "Laboratory test finding (finding)"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin (Bld) [Mass/Vol]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Leegwater"
+        },
+        "context": {
+          "reference": "EpisodeOfCare/AnnekeLeegwater-EpisodeOfCare"
+        },
+        "effectiveDateTime": "2020-02-06",
+        "valueQuantity": {
+          "value": 9,
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/AnnekeLeegwater-Observation-HB"
+      }
+    }
+  ]
+}
