@@ -1,0 +1,455 @@
+{
+    "resourceType": "Bundle",
+  "id": "0b231197-1188-4717-b30e-b642e44hsnr5",
+  "type": "transaction",
+  "entry": [
+        {
+            "resource": {
+                "resourceType": "Composition",
+                "id": "Composition-IZK-Leegwater-KindOnderdeel",
+                "meta": {
+                  "profile": [
+"http://nictiz.nl/fhir/StructureDefinition/bc-TransactionComposition"
+                  ]
+                },
+                "status": "final",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "15508-5",
+                      "display": "Labor and delivery records"
+                    }
+                  ]
+                },
+                "subject": {
+                  "reference": "Patient/kindLeegwater"
+                },
+                "date": "2021-02-16T15:04:16.5777651T01:00",
+                "author": {
+                    "reference": "Practitioner/IZK-AnnekeLeegwater-Practitioner",
+                    "display": "MW Verloskundige"
+                  },
+                "title": "Integrale zwangerschapskaart Anneke Leegwater, onderdeel kind",
+                "section": [
+                  {    
+                    "entry": [
+                        {
+                            "reference": "Patient/kindLeegwater",
+                            "display": "Kind Leegwater"
+                        },
+                        {
+                        "reference": "Practitioner/IZK-AnnekeLeegwater-Practitioner",
+                        "display": "MW Verloskundige"
+                        },
+                        {
+                        "reference": "EpisodeOfCare/IZK-AnnekeLeegwater-EpisodeOfCare",
+                        "display": "Zwangerschap Anneke Leegwater"
+                        },
+                        {
+                        "reference": "Observation/IZK-AnnekeLeegwater-Observation-GewichtKind",
+                            "display": "Geboortegewicht kind Anneke Leegwater"
+                        },
+                        {
+                        "reference": "Observation/IZK-AnnekeLeegwater-Observation-LengteKind",
+                        "display": "Geboortelengte kind Anneke Leegwater"
+                        },
+                        {
+                        "reference": "Observation/IZK-AnnekeLeegwater-Observation-SchedelomvangKind",
+                        "display": "Schedelomvang kind Anneke Leegwater"
+                        },
+                        {
+                        "reference": "Observation/IZK-AnnekeLeegwater-Observation-apg5M",
+                        "display": "5 minute Apgar score kind Anneke Leegwater"
+                        }
+                    ]
+                  }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Composition/Composition-IZK-Leegwater-KindOnderdeel"
+            }
+        },
+        {
+        "fullUrl": "Patient/Leegwater",
+        "resource": {
+            "resourceType": "Patient",
+            "id": "kindLeegwater",
+            "meta": {
+                "profile":  [
+                    "http://fhir.nl/fhir/StructureDefinition/nl-core-patient",
+"http://nictiz.nl/fhir/StructureDefinition/bc-child"
+                ]
+            },
+            "extension":  [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
+                    "valueAddress": {
+                        "line":  [
+"Onder het water 1"
+                        ],
+                        "_line":  [
+                            {
+                                "extension":  [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Onder het water"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "1"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Amsterdam",
+                        "postalCode": "1000AB",
+                        "country": "NLD",
+                        "_country": {
+                            "extension":  [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding":  [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "identifier":
+                {
+                    "use": "official",
+                    "system": "LocalIdentifierSystem",
+                    "value": "121212"
+                },
+            "active": true,
+            "name":  [
+                {
+                    "extension":  [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                            "valueCode": "NL4"
+                        }
+                    ],
+                    "use": "official",
+                    "family": "Leegwater",
+                    "given":  [
+"Child"
+                    ],
+                    "_given":  [
+                        {
+                            "extension":  [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                    "valueCode": "BR"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "gender": "female",
+            "_gender": {
+                "extension":  [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                        "valueCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                                    "code": "F",
+                                    "display": "Female"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/bc-patient-birthSex",
+                        "valueCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "Medisch",
+                                    "code": "2",
+                                    "display": "vrouwelijk"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "birthDate": "2017-08-12",
+            "address":  [
+                {
+                    "line":  [
+"Onder het water 1"
+                    ],
+                    "_line":  [
+                        {
+                            "extension":  [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                    "valueString": "Onder het water"
+                                },
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                    "valueString": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "city": "Amsterdam",
+                    "postalCode": "1000AB",
+                    "country": "Nederland",
+                    "_country": {
+                        "extension":  [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                "valueCodeableConcept": {
+                                    "coding":  [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                            "code": "6030",
+                                            "display": "Nederland"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "multipleBirthInteger": "1"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/kindLeegwater"
+            }
+        },
+        {
+          "fullUrl": "Practitioner/IZK-AnnekeLeegwater-Practitioner",
+          "resource": {
+            "resourceType": "Practitioner",
+            "id": "IZK-AnnekeLeegwater-Practitioner",
+            "meta": {
+              "profile": [
+"http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "MW Verloskundige"
+            },
+            "identifier": [
+              {
+                "system": "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers",
+                "value": "123456789"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Practitioner/IZK-AnnekeLeegwater-Practitioner"
+          }
+        },
+        {
+      "fullUrl": "Observation/IZK-AnnekeLeegwater-Observation-GewichtKind",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IZK-AnnekeLeegwater-Observation-GewichtKind",
+        "meta": {
+            "profile":  [
+                "http://nictiz.nl/fhir/StructureDefinition/nl-core-observation",
+"http://nictiz.nl/fhir/StructureDefinition/bc-ChildObservation"
+            ]
+        },
+        "status": "final",
+        "code": {
+            "coding":  [
+                {
+                    "system": "http://loinc.org",
+                    "code": "8339-4",
+                    "display": "Birth weight Measured"
+                }
+            ]
+        },
+        "subject": {
+            "reference": "Patient/kindLeegwater",
+            "display": "Kind Leegwater"
+        },
+        "context": {
+            "reference": "EpisodeOfCare/IZK-AnnekeLeegwater-EpisodeOfCare"
+        },
+        "valueQuantity": {
+            "value": 2845,
+            "system": "http://unitsofmeasure.org",
+            "code": "gram"
+        },
+        "interpretation": {
+            "coding":  [
+                {
+                    "system": "PercentielGeboortegewicht",
+                    "code": "2",
+                    "display": "p2,3 tot p10"
+                }
+            ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/IZK-AnnekeLeegwater-Observation-GewichtKind"
+      }
+    },
+    {
+      "fullUrl": "Observation/IZK-AnnekeLeegwater-Observation-LengteKind",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IZK-AnnekeLeegwater-Observation-LengteKind",
+        "meta": {
+            "profile":  [
+"http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight"
+            ]
+        },
+        "status": "final",
+        "category":  [
+            {
+                "coding":  [
+                    {
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "exam",
+                        "display": "Exam"
+                    }
+                ]
+            }
+        ],
+        "code": {
+            "coding":  [
+                {
+                    "system": "http://loinc.org",
+                    "code": "8302-2",
+                    "display": "Body height"
+                }
+            ]
+        },
+        "subject": {
+            "reference": "Patient/kindLeegwater",
+            "display": "Kind Leegwater"
+        },
+        "context": {
+            "reference": "EpisodeOfCare/IZK-AnnekeLeegwater-EpisodeOfCare"
+        },
+        "effectiveDateTime": "2020-02-27",
+        "performer":  [
+            {
+                "reference": "Practitioner/IZK-AnnekeLeegwater-Practitioner"
+            }
+        ],
+        "valueQuantity": {
+            "value": 168,
+            "system": "http://unitsofmeasure.org",
+            "code": "cm"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/IZK-AnnekeLeegwater-Observation-LengteKind"
+      }
+    },
+    {
+      "fullUrl": "Observation/IZK-AnnekeLeegwater-Observation-SchedelomvangKind",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IZK-AnnekeLeegwater-Observation-SchedelomvangKind",
+        "meta": {
+            "profile":  [
+"http://nictiz.nl/fhir/StructureDefinition/nl-core-observation"
+            ]
+        },
+        "status": "final",
+        "code": {
+            "coding":  [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "169876006",
+                    "display": "Birth head circumference (observable entity)"
+                }
+            ]
+        },
+        "subject": {
+            "reference": "Patient/kindLeegwater",
+            "display": "Kind Leegwater"
+        },
+        "context": {
+            "reference": "EpisodeOfCare/IZK-AnnekeLeegwater-EpisodeOfCare",
+            "display": "Zwangerschap Anneke Leegwater"
+        },
+        "valueQuantity": {
+            "value": 35,
+            "unit": "cm",
+            "system": "unitsofmeasure.org"
+        },
+        "method": {
+            "coding":  [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "31551000146109",
+                    "display": "Meten van schedelomvang m.b.v. meetlint"
+                }
+            ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/IZK-AnnekeLeegwater-Observation-SchedelomvangKind"
+      }
+    },
+    {
+      "fullUrl": "Observation/IZK-AnnekeLeegwater-Observation-apg5M",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IZK-AnnekeLeegwater-Observation-apg5M",
+        "meta": {
+            "profile":  [
+                "http://nictiz.nl/fhir/StructureDefinition/nl-core-observation",
+"http://nictiz.nl/fhir/StructureDefinition/zib-ApgarScore"
+            ]
+        },
+        "status": "final",
+        "code": {
+            "coding":  [
+                {
+                    "system": "http://loinc.org",
+                    "code": "9274-2",
+                    "display": "5 minute Apgar Score"
+                }
+            ]
+        },
+        "subject": {
+            "reference": "Patient/kindLeegwater",
+            "display": "Kind Leegwater"
+        },
+        "context": {
+            "reference": "EpisodeOfCare/IZK-AnnekeLeegwater-EpisodeOfCare"
+        },
+        "effectiveDateTime": "2016-02-22",
+        "valueQuantity": {
+            "value": 6
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/IZK-AnnekeLeegwater-Observation-apg5M"
+      }
+    }
+        
+    ] 
+    
+}
