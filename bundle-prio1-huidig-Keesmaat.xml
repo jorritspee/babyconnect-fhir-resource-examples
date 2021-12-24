@@ -66,11 +66,11 @@
             <display value="hbKeesmaat" />
           </entry>
           <entry>
-            <reference value="Observation/c755a920-1904-11eb-6105-020000000000" />
+            <reference value="Observation/graviditeithuidig" />
             <display value="graviditeitKeesmaat" />
           </entry>
           <entry>
-            <reference value="Observation/c755a921-1904-11eb-6105-020000000000" />
+            <reference value="Observation/pariteithuidig" />
             <display value="pariteitKeesmaat" />
           </entry>
           <entry>
@@ -568,7 +568,7 @@
     <fullUrl value="urn:uuid:c755a920-1904-11eb-6105-020000000000" />
     <resource>
       <Observation>
-        <id value="c755a920-1904-11eb-6105-020000000000" />
+        <id value="graviditeithuidig" />
         <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
           <valueReference>
             <reference value="Condition/c755a91f-1904-11eb-6105-020000000000" />
@@ -592,20 +592,20 @@
           <display value="Zwangerschap huidig Keesmaat" />
         </context>
         <valueQuantity>
-          <value value="4" />
+          <value value="5" />
         </valueQuantity>
       </Observation>
     </resource>
     <request>
       <method value="PUT" />
-      <url value="Observation/c755a920-1904-11eb-6105-020000000000" />
+      <url value="Observation/graviditeithuidig" />
     </request>
   </entry>
   <entry>
     <fullUrl value="urn:uuid:c755a921-1904-11eb-6105-020000000000" />
     <resource>
       <Observation>
-        <id value="c755a921-1904-11eb-6105-020000000000" />
+        <id value="pariteithuidig" />
         <extension url="http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3">
           <valueReference>
             <reference value="Condition/c755a91f-1904-11eb-6105-020000000000" />
@@ -635,7 +635,7 @@
     </resource>
     <request>
       <method value="PUT" />
-      <url value="Observation/c755a921-1904-11eb-6105-020000000000" />
+      <url value="Observation/pariteithuidig" />
     </request>
   </entry>
   <entry>
