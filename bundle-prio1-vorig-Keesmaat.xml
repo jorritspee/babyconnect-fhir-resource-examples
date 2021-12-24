@@ -97,6 +97,10 @@
             <reference value="Observation/bloedverlies1" />
             <display value="Hoeveelheid bloedverlies" />
           </entry>
+          <entry>
+            <reference value="Observation/kind1-Keesmaat-apg5M" />
+            <display value="Apgar na 5 minuten" />
+          </entry>
         </section>
       </Composition>
     </resource>
