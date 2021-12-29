@@ -30,7 +30,7 @@
             <display value="Keesmaat" />
           </entry>
           <entry>
-            <reference value="Organization/o1504" />
+            <reference value="Organization/c755980f-1904-11eb-6105-020000000000" />
             <display value="Verloskundigenpraktijk A" />
           </entry>
           <entry>
@@ -89,23 +89,35 @@
     <fullUrl value="urn:uuid:c75595d4-1904-11eb-6105-020000000000" />
     <resource>
       <Patient>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <div>Id 999996472 (BSN), Keesmaat</div>
-          </div>
-        </text>
+        <id value="c75595d4-1904-11eb-6105-020000000000"/>
+        <meta>
+          <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" />
+          <profile value="http://nictiz.nl/fhir/StructureDefinition/bc-woman" />
+        </meta>
         <identifier>
+          <use value="official" />
           <system value="http://fhir.nl/fhir/NamingSystem/bsn" />
           <value value="999996472" />
         </identifier>
+        <active value="true" />
         <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+              <valueCode value="NL4" />
+          </extension>
+          <use value="official" />
           <family value="Keesmaat">
-            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-              <valueString value="Keesmaat" />
-            </extension>
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                  <valueString value="Keesmaat" />
+              </extension>
           </family>
+          <given value="Eslem">
+              <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                  <valueCode value="BR" />
+              </extension>
+          </given>
         </name>
+        <gender value="female" />
+        <birthDate value="1988-10-05" />
       </Patient>
     </resource>
     <request>
@@ -117,30 +129,65 @@
     <fullUrl value="urn:uuid:c755980f-1904-11eb-6105-020000000000" />
     <resource>
       <Organization>
-        <id value="o1504" />
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-              <caption>OrganisatieId: 1504</caption>
-              <tbody>
-                <tr>
-                  <th>Naam</th>
-                  <td>Verloskundigenpraktijk A</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </text>
+        <id value="c755980f-1904-11eb-6105-020000000000" />
+        <meta>
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization" />
+        </meta>
         <identifier>
-          <value value="o1504" />
+          <system value="http://fhir.nl/fhir/NamingSystem/lvr-instellingid" />
+          <value value="37" />
         </identifier>
         <name value="Verloskundigenpraktijk A" />
-      </Organization>
+        <telecom>
+            <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1" />
+                        <code value="LL" />
+                        <display value="Vast telefoonnummer" />
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <system value="phone" />
+            <value value="020-5561356" />
+            <use value="work" />
+        </telecom>
+        <telecom>
+            <system value="email" />
+            <value value="info@Verloskundigenpraktijka.nl" />
+            <use value="work" />
+        </telecom>
+        <address>
+            <line value="Hoofdweg 2a">
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                    <valueString value="Hoofdweg" />
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                    <valueString value="2" />
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
+                    <valueString value="a" />
+                </extension>
+            </line>
+            <city value="Amsterdam" />
+            <postalCode value="1000AA" />
+            <country value="NLD">
+                <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34" />
+                            <code value="6030" />
+                            <display value="Nederland" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+            </country>
+        </address>
+    </Organization>
     </resource>
     <request>
       <method value="PUT" />
-      <url value="Organization/o1504" />
+      <url value="Organization/c755980f-1904-11eb-6105-020000000000" />
     </request>
   </entry>
   <entry>
@@ -148,12 +195,92 @@
     <resource>
       <Practitioner>
         <id value="c75595df-1904-11eb-6105-020000000000" />
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <div />
-          </div>
-        </text>
+        <meta>
+        <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner" />
+        </meta>
+        <identifier>
+        <system value="http://fhir.nl/fhir/NamingSystem/lvr-zorgverlenerid" />
+        <value value="12345678" />
+        </identifier>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+              <valueCode value="F" />
+          </extension>
+          <family value="de Los-van Straten">
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+                  <valueString value="de" />
+              </extension>
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                  <valueString value="Los" />
+              </extension>
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
+                  <valueString value="van" />
+              </extension>
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+                  <valueString value="Straten" />
+              </extension>
+          </family>
+          <given value="Vera">
+              <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                  <valueCode value="BR" />
+              </extension>
+          </given>
+          <given value="V">
+              <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                  <valueCode value="IN" />
+              </extension>
+          </given>
+          <given value="Vera">
+              <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                  <valueCode value="CL" />
+              </extension>
+          </given>
+        </name>
+        <telecom>
+        <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/v3/AddressUse" />
+                    <code value="MC" />
+                    <display value="Mobile Phone" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="phone" />
+        <value value="0612345678" />
+        <use value="work" />
+        </telecom>
+        <telecom>
+          <system value="email" />
+          <value value="vdelos@ziekenhuis.nl" />
+          <use value="work" />
+        </telecom>
+        <address>
+            <line value="Hoofdweg 1a">
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                    <valueString value="Hoofdweg" />
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                    <valueString value="1" />
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
+                    <valueString value="a" />
+                </extension>
+            </line>
+            <city value="Amsterdam" />
+            <postalCode value="1000AA" />
+            <country value="NLD">
+                <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34" />
+                            <code value="6030" />
+                            <display value="Nederland" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+            </country>
+        </address>
       </Practitioner>
     </resource>
     <request>
@@ -179,7 +306,7 @@
                       <a href="Practitioner/c75595df-1904-11eb-6105-020000000000">Practitioner/c75595df-1904-11eb-6105-020000000000</a>
                     </div>
                     <div>
-                      <a href="Organization/o1504">Verloskundigenpraktijk A</a>
+                      <a href="Organization/c755980f-1904-11eb-6105-020000000000">Verloskundigenpraktijk A</a>
                     </div>
                   </td>
                 </tr>
@@ -191,7 +318,7 @@
           <reference value="Practitioner/c75595df-1904-11eb-6105-020000000000" />
         </practitioner>
         <organization>
-          <reference value="Organization/o1504" />
+          <reference value="Organization/c755980f-1904-11eb-6105-020000000000" />
           <display value="Verloskundigenpraktijk A" />
         </organization>
       </PractitionerRole>
@@ -225,7 +352,7 @@
           <display value="Keesmaat" />
         </patient>
         <managingOrganization>
-          <reference value="Organization/o1504" />
+          <reference value="Organization/c755980f-1904-11eb-6105-020000000000" />
           <display value="Verloskundigenpraktijk A" />
         </managingOrganization>
         <careManager>
